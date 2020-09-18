@@ -8,7 +8,7 @@ export default function App() {
   return (
     <Layout>
       <Row title={'Trending Now'} fetchUrl={request.fetchTrending} isLargeRow />
-      {/* <Row title={'Top Rated'} fetchUrl={request.fetchTopRated} />
+      <Row title={'Top Rated'} fetchUrl={request.fetchTopRated} />
       <Row title={'Action'} fetchUrl={request.fetchAction} />
       <Row title={'Adventure'} fetchUrl={request.fetchAdventure} />
       <Row title={'Animation'} fetchUrl={request.fetchAnimation} />
@@ -27,7 +27,7 @@ export default function App() {
       <Row title={'T.V. Movies'} fetchUrl={request.fetchTvMovie} />
       <Row title={'Thriller'} fetchUrl={request.fetchThriller} />
       <Row title={'War'} fetchUrl={request.fetchWar} />
-      <Row title={'Western'} fetchUrl={request.fetchWestern} /> */}
+      <Row title={'Western'} fetchUrl={request.fetchWestern} />
     </Layout>
   )
 }
