@@ -18,8 +18,8 @@ const Layout = ({ children }) => (
           font-family: 'Raleway', sans-serif;
           line-height: 1.4;
           font-size: 1.1rem;
-          background: ${colors.lightColor};
-          color: ${colors.darkColor};
+          background: ${colors.primaryColor};
+          color: ${colors.lightColor};
         }
 
         img {
