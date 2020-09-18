@@ -17,8 +17,6 @@ function Row({ title, fetchUrl, isLargeRow }) {
     fetchData()
   }, [fetchUrl])
 
-  console.log(movies)
-
   return (
     <div
       className='row'
@@ -36,8 +34,8 @@ function Row({ title, fetchUrl, isLargeRow }) {
           }
 
           .row__poster {
-            max-height: 100px;
-            margin-right: 0.5rem;
+            max-height: 150px;
+            margin-right: 1rem;
             border-radius: 5px;
             transition: all 0.2s ease-in-out;
 
