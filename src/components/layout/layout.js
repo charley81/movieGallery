@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { Global, css, jsx } from '@emotion/core'
 import React from 'react'
+import colors from '../../utilities/cssVariables'
 
 const Layout = ({ children }) => (
   <>
@@ -12,42 +13,21 @@ const Layout = ({ children }) => (
           padding: 0;
         }
 
-        * + * {
-          margin-top: 1rem;
-        }
-
         html,
         body {
           font-family: 'Raleway', sans-serif;
           line-height: 1.4;
-          font-size: 1.2rem;
-          color: #555;
+          font-size: 1.1rem;
+          background: ${colors.lightColor};
+          color: ${colors.darkColor};
         }
 
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-          color: #222;
-          line-height: 1.1.%;
-
-          + * {
-            margin-top: 0.5rem;
-          }
-        }
-
-        strong {
-          color: #222;
-        }
-
-        li {
-          margin-top: 0.25rem;
+        img {
+          object-fit: contain;
+          width: 100%;
         }
       `}
     />
-    <header></header>
     <main>{children}</main>
   </>
 )
