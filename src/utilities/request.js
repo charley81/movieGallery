@@ -1,6 +1,6 @@
 const API_KEY = process.env.REACT_APP_API_KEY
 
-const request = {
+const requests = {
   fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
   fetchTopRated: `/movie/top_rated?api_key=${API_KEY}&language=en-US`,
   fetchAction: `/discover/movie?api_key=${API_KEY}&with_genres=28`,
@@ -24,4 +24,4 @@ const request = {
   fetchWestern: `/discover/movie?api_key=${API_KEY}&with_genres=37`
 }
 
-export default request
+export default requests
