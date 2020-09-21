@@ -23,7 +23,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
       css={css`
         margin: 2rem 0 2rem 1rem;
 
-        .row__posters {
+        .row-posters {
           display: flex;
           overflow-y: hidden;
           overflow-x: scroll;
@@ -33,7 +33,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
             display: none;
           }
 
-          .row__poster {
+          .row-poster {
             max-height: 150px;
             margin-right: 1rem;
             border-radius: 5px;
@@ -47,10 +47,10 @@ function Row({ title, fetchUrl, isLargeRow }) {
       `}
     >
       <h2>{title}</h2>
-      <div className='row__posters'>
+      <div className='row-posters'>
         {movies.map(movie => (
           <img
-            className='row__poster'
+            className='row-poster'
             key={movie.id}
             src={`${base_url}${movie.backdrop_path}`}
             alt=''
